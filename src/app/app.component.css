@@ -1,0 +1,13 @@
+.div1{
+    border: 2px solid black;
+    margin: 20px;
+    width: 600px;
+    padding: 10px;
+}
+.div2{
+    border: 2px solid black;
+    margin: 50px;
+    margin-left: 180px;
+    width: 200px;
+    padding: 5px;
+}

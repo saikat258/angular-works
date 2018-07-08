@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center" class="div1">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <div class="div2">
+    <label for="">Search Filter : </label>
+    <input type="text" name="searchCriteria" [(ngModel)]='searchCriteria'>
+    <table>
+      <tr>
+        <td>ID</td>
+        <td>NAME</td>
+        <td>DESIGNATION</td>
+      </tr>
+      <tr *ngFor="let eachEmp of emp | myfilter: 'name':searchCriteria">
+        <td>{{eachEmp.id}}</td>
+        <td>{{eachEmp.name}}</td>
+        <td>{{eachEmp.designation}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
